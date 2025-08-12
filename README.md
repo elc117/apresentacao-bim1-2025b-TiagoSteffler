@@ -31,6 +31,53 @@ Enquanto que um compilador salva o código compilado em um código objeto para d
 
 <br>
 
-### Interação com Haskell:
-Exemplo de um código com a linguagem Haskell
-![Alt Text](AtividadeHaskell.gif)
+## REPL
+
+**Read-Eval-Print-Loop** é tipo de ambiente que permite a entrada de expressões pelo usuário, que então são processadas e resultam em uma saída. Pode também ser conhecido por **interpretador interativo**. Dessa forma, permitem **ambientes interativos** para explorar ferramentas em alguns tipos específicos de linguagens de programação. Exemplos desse tipo de ambiente podem ser encontrados em:
+- IPython
+- Node.js console
+- Bash shell no Linux
+- Console do desenvolvedor em navegadores web
+
+Por exemplo, pode-se colocar uma entrada num Bash como:
+
+``` 
+user@ubuntu:~$ expr 2 + 2
+```
+
+E obter como retorno o seguinte resultado:
+
+```
+4
+```
+
+<br>
+
+
+## Mas Haskell é uma linguagem interpretada ou compilada?
+
+**Depende**. Sendo majoritariamente compilado (GHC), ele também apresenta um modo interativo (GHCi) que possui comandos REPL. Ao utilizar o GHCi, podemos testar rapidamente trechos de código, enquanto o GHC compila o programa (com extensão .hs) em um executável do tipo .exe.
+
+### Compilando um programa com GHC:
+![Alt Text](HaskellGHC.gif)
+
+### Interação com GHCi:
+Neste exemplo, criamos uma função que retorna o valor de entrada somado a 4. Testamos primeiro com uma entrada e logo após com um array como entrada.
+
+![Alt Text](HaskellGHCi.gif)
+
+
+### Testes de funções com GHCi:
+Com o programa pronto, podemos carregá-lo com o GHCi e realizar os testes nas funções presentes neles. Atente-se à precedência dos argumentos.
+
+![Alt Text](HaskellGHCitestes.gif)
+
+<br>
+
+### **Fontes:**
+
+[Difference Between Compiler and Interpreter - Geeks for Geeks](https://www.geeksforgeeks.org/compiler-design/difference-between-compiler-and-interpreter/)
+
+[What Is REPL? - DigitalOcean](https://www.digitalocean.com/community/tutorials/what-is-repl)
+
+[Programming Haskell - Introduction - HaskellWiki](https://wiki.haskell.org/Tutorials/Programming_Haskell/Introduction)
